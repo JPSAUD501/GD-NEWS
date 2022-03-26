@@ -8,10 +8,11 @@ import fs from 'fs'
 import getColors from 'get-image-colors'
 import Discord, { MessageEmbed } from 'discord.js'
 import { log } from '../functions/log'
-import { IClientYTP, ITwitchChannelsDataChannel } from '../interfaces/interfaces'
+import { ITwitchChannelsDataChannel } from '../interfaces/interfaces'
 import { getChannelData } from './twitchSubModules/channelData'
 import { streamGetData } from './twitchSubModules/getStreams'
 import { updateTwitchAuthConfig } from './twitchSubModules/updateAuthConfig'
+import { client } from '../index'
 
 const config = YAML.parse(fs.readFileSync('./config.yaml', 'utf8'))
 
@@ -23,7 +24,7 @@ const twitchChannelsData: { channel: ITwitchChannelsDataChannel } = {
   channel: {}
 }
 
-export const twitchUpdate: any = async function (client: IClientYTP) {
+export const twitchUpdate: any = async function () {
   try {
     config.twitchChannels.map(
       async function (channel: string, i: number) {

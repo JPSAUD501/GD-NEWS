@@ -28,7 +28,7 @@ if (!YAML.parse(fs.readFileSync('./sendedVideos.yaml', 'utf8')).sendedVideos) {
 
 // throw new Error('Missing Discord Token')
 
-const client: IClientYTP = new Discord.Client({
+export const client: IClientYTP = new Discord.Client({
   restTimeOffset: 0,
   shards: 'auto',
   restWsBridgeTimeout: 100,
@@ -64,8 +64,8 @@ client.on('ready', async () => {
   await twitchUpdate()
   await ytUpdate()
   setInterval(async () => { await updateTwitchAuth() }, 3600000) // Update auth key every hour
-  setInterval(async () => { await twitchUpdate(client) }, config.updateInterval)
-  setInterval(async () => { await ytUpdate(client) }, config.updateInterval)
+  setInterval(async () => { await twitchUpdate() }, config.updateInterval)
+  setInterval(async () => { await ytUpdate() }, config.updateInterval)
 })
 
 if (!process.env.DISCORD_TOKEN) throw new Error('Missing Discord Token')

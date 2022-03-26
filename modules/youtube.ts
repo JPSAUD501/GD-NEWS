@@ -8,11 +8,11 @@ import fs from 'fs'
 import getColors from 'get-image-colors'
 import Discord, { MessageEmbed } from 'discord.js'
 import { log } from '../functions/log'
-import { IClientYTP } from '../interfaces/interfaces'
+import { client } from '../index'
 
 const config = YAML.parse(fs.readFileSync('./config.yaml', 'utf8'))
 
-export const ytUpdate: any = async function (client: IClientYTP) {
+export const ytUpdate: any = async function () {
   try {
     const sendedVideosTempData = YAML.parse(fs.readFileSync('./sendedVideos.yaml', 'utf8'))
     log.info('Updating YouTube channels...')

@@ -1,0 +1,32 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+### UPDATE THIS FILE REQUIRED VALUES WITH YOUR OWN DATA ###
+
+updateInterval: 360000 # Interval to update Twitch lives and Youtube new videos in milliseconds (Default: 360000 = 5 minute) (REQUIRED)
+
+discordServerId: "" # Discord server ID (REQUIRED)
+
+twitchDiscordChannelId: "" # Discord channel ID to send Twitch live notifications (REQUIRED)
+ytDiscordChannelId: "" # Discord channel ID to post new videos from YouTube (REQUIRED)
+
+twitchNotifyDiscordRoleID: "" # Discord role ID to notify when a new stream is online
+ytNotifyDiscordRoleID: "" # Discord role ID to notify when a new video is posted
+
+twitchChannels: # Twitch channels to monitor
+  - hetzayi # Twitch channel name
+  - yarlxws # Twitch second channel name
+  - tegertw # Twitch third channel name
+  - bubimaus2 # Twitch fourth channel name
+  - yurisantos_y # Twitch fifth channel name
+  - valorant_br # Twitch sixth channel name
+  # You can add more channels
+
+ytChannels: # YouTube channels to monitor
+  - UCgWiuB2PQIUhJgEN9No281g # ID of Valorant Brasil YT channel
+  - UCWaIKPRTcBzj_-mRkLQU02g # ID of Valorant Bugs & Glitches YT channel
+  - UCoFzLniCPZy5jwqRK9RmHjA # ID of Marquezinho YT channel
+  - UCZmz0RdI6LvX_rRmrlwx0Eg # ID of Hitscan YT channel
+  - UCW-4nEie-LVG7LK3CkQeBuw # ID of VALORANT Esports BR YT channel
+  # You can add more channels

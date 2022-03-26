@@ -1,0 +1,35 @@
+{
+  "name": "gd-news",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MPL-2.0",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cron": "^1.8.2",
+    "discord-yt-poster": "^3.1.2",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "get-image-colors": "^4.0.1",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/get-image-colors": "^4.0.1",
+    "@types/request": "^2.48.8",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "author": "JPSAUD501 <joaopedrosaudcardoso@gmail.com>"
+}

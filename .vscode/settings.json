@@ -1,0 +1,10 @@
+{
+  "cSpell.ignorePaths": [
+    "exemple.*",
+    "sendedVideos.yaml",
+    "config.yaml"
+  ],
+  "cSpell.words": [
+    "youtube"
+  ]
+}
